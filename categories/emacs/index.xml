@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ELON IS ME</title>
-    <link>https://elonli.top/</link>
-    <description>Recent content on ELON IS ME</description>
+    <title>Emacs on ELON IS ME</title>
+    <link>https://elonli.top/categories/emacs/</link>
+    <description>Recent content in Emacs on ELON IS ME</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://elonli.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://elonli.top/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About The Mind Of Emacs</title>
       <link>https://elonli.top/post/about-the-mind-of-emacs/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://elonli.top/post/about-the-mind-of-emacs/</guid>
       <description>Recently, I am busy with everything. Is feel tired and anxious. I&amp;rsquo;m trying to find a method that can bring about lasting change and make solving my life&amp;rsquo;s challenges easier and simpler. I am a socialist and I support the free software movement. I used to write some Emacs configurations, but these setups couldn&amp;rsquo;t address my problems. I&amp;rsquo;ve fallen into a new trap of doing things just for the sake of doing them.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://elonli.top/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://elonli.top/about/</guid>
-      <description>我是Elon，一名CSer，热爱使用Emacs编辑器，坚定支持自由软件运动。2001年出生的我，钟情于纯音乐和播客的世界。眼下，我正在北京攻</description>
     </item>
     
   </channel>

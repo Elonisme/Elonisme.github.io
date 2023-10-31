@@ -5,6 +5,16 @@
     <link>https://elonli.top/categories/</link>
     <description>Recent content in Categories on ELON IS ME</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://elonli.top/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 31 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://elonli.top/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs</title>
+      <link>https://elonli.top/categories/emacs/</link>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://elonli.top/categories/emacs/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
