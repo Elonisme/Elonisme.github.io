@@ -6,24 +6,21 @@
     <description>Recent content in Posts on ELON IS ME</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://elonli.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://elonli.top/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GTD Practice Survey</title>
       <link>https://elonli.top/post/gtd-practice-survey/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://elonli.top/post/gtd-practice-survey/</guid>
       <description>GTD 在最近十年中的都特别火。 我自从高中阶段通过知乎了解到了时间管理，遗憾的是我已经研究生了还在了解 GTD。 我似乎永远都学不会如何 正确的 使用 GTD ，</description>
     </item>
-    
     <item>
       <title>About The Mind Of Emacs</title>
       <link>https://elonli.top/post/about-the-mind-of-emacs/</link>
       <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://elonli.top/post/about-the-mind-of-emacs/</guid>
       <description>Recently, I am busy with everything. I feel tired and anxious. I&amp;rsquo;m trying to find a method that can bring about lasting change and make solving my life&amp;rsquo;s challenges easier and simpler. I am a socialist and I support the free software movement. I used to write some Emacs configurations, but these setups couldn&amp;rsquo;t address my problems. I&amp;rsquo;ve fallen into a new trap of doing things just for the sake of doing them.</description>
     </item>
-    
   </channel>
 </rss>
