@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on ELON IS ME</title>
-    <link>https://elonli.top/post/</link>
-    <description>Recent content in Posts on ELON IS ME</description>
+    <title>gtd on ELON IS ME</title>
+    <link>https://elonli.top/categories/gtd/</link>
+    <description>Recent content in gtd on ELON IS ME</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 28 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://elonli.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://elonli.top/categories/gtd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GTD实践报告</title>
       <link>https://elonli.top/post/gtd/</link>
       <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://elonli.top/post/gtd/</guid>
       <description>缘起 GTD 潮涌十载，我从高中起途径知乎，了解时间之舞。遗憾岁月如梭，我研究生仍探索 GTD 理念。似乎永难掌握 GTD 的真谛，抑或永远学习如何运用其智慧，舞动</description>
-    </item>
-    <item>
-      <title>我的Haibara Emacs</title>
-      <link>https://elonli.top/post/haibara/</link>
-      <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://elonli.top/post/haibara/</guid>
-      <description>Haibra Emacs的诞生 近日忙碌琐事纷，疲倦困顿心焦燥。求变而寻觅持久法，解我生活难题艰巨。身为社会主义信奉者，支持自由软件潮流。曾著Emacs配</description>
     </item>
   </channel>
 </rss>

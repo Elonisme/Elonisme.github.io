@@ -6,28 +6,28 @@
     <description>Recent content on ELON IS ME</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://elonli.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GTD实践报告</title>
+      <link>https://elonli.top/post/gtd/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://elonli.top/post/gtd/</guid>
+      <description>缘起 GTD 潮涌十载，我从高中起途径知乎，了解时间之舞。遗憾岁月如梭，我研究生仍探索 GTD 理念。似乎永难掌握 GTD 的真谛，抑或永远学习如何运用其智慧，舞动</description>
+    </item>
+    <item>
+      <title>我的Haibara Emacs</title>
+      <link>https://elonli.top/post/haibara/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://elonli.top/post/haibara/</guid>
+      <description>Haibra Emacs的诞生 近日忙碌琐事纷，疲倦困顿心焦燥。求变而寻觅持久法，解我生活难题艰巨。身为社会主义信奉者，支持自由软件潮流。曾著Emacs配</description>
+    </item>
     <item>
       <title>About</title>
       <link>https://elonli.top/about/</link>
       <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://elonli.top/about/</guid>
       <description>各位好，我是Elon，现在在北京读计算机技术的研究生。我是一名 Emacs 用户，自诩是共产主义者。这个博客的内容我使用org mode和hugo进行管理</description>
-    </item>
-    <item>
-      <title>GTD Practice Survey</title>
-      <link>https://elonli.top/post/gtd-practice-survey/</link>
-      <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://elonli.top/post/gtd-practice-survey/</guid>
-      <description>GTD 在最近十年中的都特别火。 我自从高中阶段通过知乎了解到了时间管理，遗憾的是我已经研究生了还在了解 GTD。 我似乎永远都学不会如何 正确的 使用 GTD ，</description>
-    </item>
-    <item>
-      <title>About My Of Emacs(APTX-4869)</title>
-      <link>https://elonli.top/post/about-the-mind-of-emacs/</link>
-      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://elonli.top/post/about-the-mind-of-emacs/</guid>
-      <description>Recently, I am busy with everything. I feel tired and anxious. I&amp;rsquo;m trying to find a method that can bring about lasting change and make solving my life&amp;rsquo;s challenges easier and simpler. I am a socialist and I support the free software movement. I used to write some Emacs configurations, but these setups couldn&amp;rsquo;t address my problems. I&amp;rsquo;ve fallen into a new trap of doing things just for the sake of doing them.</description>
     </item>
   </channel>
 </rss>
