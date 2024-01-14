@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ELON&#39;S BLOG</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on ELON&#39;S BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>关于我 各位好，我是Elon，现在在北京读计算机技术的研究生。我是一名 Emacs 用户，自诩是共产主义者。 这个博客的内容我使用org mode和hugo进</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
