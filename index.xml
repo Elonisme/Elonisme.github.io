@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ELON&#39;S BLOG</title>
-    <link>http://localhost:1313/</link>
+    <link>https://elonisme.github.io/</link>
     <description>Recent content on ELON&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jan 2024 20:43:24 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://elonisme.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何在Arch Linux上安装EAF-PDF-Viewer</title>
-      <link>http://localhost:1313/post/install_eaf_arch/</link>
+      <link>https://elonisme.github.io/post/install_eaf_arch/</link>
       <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/install_eaf_arch/</guid>
+      <guid>https://elonisme.github.io/post/install_eaf_arch/</guid>
       <description>EAF全称为：Emacs Application Framework, 是新一代的 Emacs 图形应用框架， 通过扩展 Emacs 的多媒体能力， 达到 Live in Emacs 的终极目标，而EAF-PDF-Viewer是目前Em</description>
     </item>
     <item>
       <title>如何在Emacs上优雅地使用Typst</title>
-      <link>http://localhost:1313/post/elegent_use_typst_in_emacs/</link>
+      <link>https://elonisme.github.io/post/elegent_use_typst_in_emacs/</link>
       <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/elegent_use_typst_in_emacs/</guid>
+      <guid>https://elonisme.github.io/post/elegent_use_typst_in_emacs/</guid>
       <description>Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://elonisme.github.io/about/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://elonisme.github.io/about/</guid>
       <description>关于我 各位好，我是Elon，现在在北京读计算机技术的研究生。我是一名 Emacs 用户，自诩是共产主义者。 这个博客的内容我使用org mode和hugo进</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/archives/</link>
+      <link>https://elonisme.github.io/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archives/</guid>
+      <guid>https://elonisme.github.io/archives/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/categories/</link>
+      <link>https://elonisme.github.io/categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/</guid>
+      <guid>https://elonisme.github.io/categories/</guid>
       <description></description>
     </item>
   </channel>

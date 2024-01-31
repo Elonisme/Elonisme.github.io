@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ELON&#39;S BLOG</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://elonisme.github.io/tags/</link>
     <description>Recent content in Tags on ELON&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jan 2024 20:43:24 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://elonisme.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs</title>
-      <link>http://localhost:1313/tags/emacs/</link>
+      <link>https://elonisme.github.io/tags/emacs/</link>
       <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/emacs/</guid>
+      <guid>https://elonisme.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     <item>
       <title>Typst</title>
-      <link>http://localhost:1313/tags/typst/</link>
+      <link>https://elonisme.github.io/tags/typst/</link>
       <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/typst/</guid>
+      <guid>https://elonisme.github.io/tags/typst/</guid>
       <description></description>
     </item>
   </channel>

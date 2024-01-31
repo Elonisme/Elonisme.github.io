@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emacs on ELON&#39;S BLOG</title>
-    <link>http://localhost:1313/tags/emacs/</link>
+    <link>https://elonisme.github.io/tags/emacs/</link>
     <description>Recent content in Emacs on ELON&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jan 2024 20:43:24 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://elonisme.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何在Arch Linux上安装EAF-PDF-Viewer</title>
-      <link>http://localhost:1313/post/install_eaf_arch/</link>
+      <link>https://elonisme.github.io/post/install_eaf_arch/</link>
       <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/install_eaf_arch/</guid>
+      <guid>https://elonisme.github.io/post/install_eaf_arch/</guid>
       <description>EAF全称为：Emacs Application Framework, 是新一代的 Emacs 图形应用框架， 通过扩展 Emacs 的多媒体能力， 达到 Live in Emacs 的终极目标，而EAF-PDF-Viewer是目前Em</description>
     </item>
     <item>
       <title>如何在Emacs上优雅地使用Typst</title>
-      <link>http://localhost:1313/post/elegent_use_typst_in_emacs/</link>
+      <link>https://elonisme.github.io/post/elegent_use_typst_in_emacs/</link>
       <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/elegent_use_typst_in_emacs/</guid>
+      <guid>https://elonisme.github.io/post/elegent_use_typst_in_emacs/</guid>
       <description>Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工</description>
     </item>
   </channel>
