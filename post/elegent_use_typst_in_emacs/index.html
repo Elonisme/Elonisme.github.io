@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>如何在Emacs上优雅地使用Typst - ELON&#39;S BLOG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Elon Li" /><meta name="description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而E" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.122.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/elegent_use_typst_in_emacs/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="如何在Emacs上优雅地使用Typst" />
+<meta property="og:description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而E" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/elegent_use_typst_in_emacs/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-01-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-31T20:43:24+08:00" />
+
+<meta itemprop="name" content="如何在Emacs上优雅地使用Typst">
+<meta itemprop="description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而E"><meta itemprop="datePublished" content="2024-01-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-01-31T20:43:24+08:00" />
+<meta itemprop="wordCount" content="977">
+<meta itemprop="keywords" content="Typst,Emacs," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="如何在Emacs上优雅地使用Typst"/>
+<meta name="twitter:description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而E"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Even</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/archives/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Even</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/archives/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">如何在Emacs上优雅地使用Typst</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-01-31 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#下载typst">下载Typst</a></li>
+        <li><a href="#配置emacs">配置Emacs</a></li>
+        <li><a href="#安装pdf浏览器-可选eaf-pdf-viewer">安装PDF浏览器（可选eaf-pdf-viewer）</a></li>
+        <li><a href="#增强实时性-可选">增强实时性（可选）</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而Emacs作为一款以自由著称的编辑器，也是支持编写Typst的。本文将逐步介绍如何在_Emacs_上使用_Typst_。</p>
+<h2 id="下载typst">下载Typst</h2>
+<p>首先我们需要下载 <code>typst</code> 到具体的 <code>Gnu/Linux</code> 发行版上，我使用Arch系的发行版，所以我使用以下的命令就能安装 <code>typst</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S typst
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装好后使用如下命令查看是否配置进环境变量:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">typst --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果出现如下类似的信息说明安装成功：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>user@archlinux ~<span class="o">]</span>$ typst --version
+</span></span><span class="line"><span class="cl">typst 0.10.0 <span class="o">(</span>70ca0d25<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="配置emacs">配置Emacs</h2>
+<p><code>typst</code> 在  <span class="underline">Emacs</span> 上有两个包，分别是<a href="https://github.com/uben0/tree-sitter-typst">typst-ts-mode</a>和<a href="https://github.com/Ziqi-Yang/typst-mode.el">typst-mode</a>。前者使用了 <code>elpaca</code> 作为包管理器，而后者使用 <code>straight</code> 作为包管理器。我不熟悉 <code>elpaca</code> ，所以选择使用了 <code>typst-mode</code> 。这是一种实用主义的折中选择，考虑到 <code>typst-mode</code> 已经被 <code>archived</code> ，但这不妨按我们使用它，它依旧很好用。</p>
+<p>首先我们需要安装 <code>staright</code> ，如果你正在使用 <code>staright</code> 请跳过这个部分。
+你需要把下面的代码放置到 <code>init.el</code> 中， 同时保证  <code>Emacs</code> 能顺利访问 <code>GitHub</code> 。如果你不知道如何让  <code>Emacs</code> 实现代理，可以通过在 <code>Shell</code> 中启动。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="c1">;; set straight.el</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defvar</span> <span class="nv">bootstrap-version</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">let</span> <span class="p">((</span><span class="nv">bootstrap-file</span>
+</span></span><span class="line"><span class="cl">       <span class="p">(</span><span class="nf">expand-file-name</span> <span class="s">&#34;straight/repos/straight.el/bootstrap.el&#34;</span> <span class="nv">user-emacs-directory</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">bootstrap-version</span> <span class="mi">6</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nf">file-exists-p</span> <span class="nv">bootstrap-file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">with-current-buffer</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">url-retrieve-synchronously</span>
+</span></span><span class="line"><span class="cl">         <span class="s">&#34;https://raw.githubusercontent.com/radian-software/straight.el/develop/install.el&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="ss">&#39;silent</span> <span class="ss">&#39;inhibit-cookies</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">goto-char</span> <span class="p">(</span><span class="nf">point-max</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">eval-print-last-sexp</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nf">load</span> <span class="nv">bootstrap-file</span> <span class="no">nil</span> <span class="ss">&#39;nomessage</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果由于网络问题没有正确安装，你可以选择删除在 <code>.emacs.d</code> 中出现的 <code>straight</code> 目录，然后重新启动Emacs进行安装。</p>
+<p><span class="underline">staright</span> 安装完毕后，将下面的代码放置在 <code>init.el</code> 中后，重启  <code>Emacs</code> 。  <code>Emacs</code> 便会自动进行安装 <code>typst-mode</code> ：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">typst-mode</span>
+</span></span><span class="line"><span class="cl">   <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:type</span> <span class="nv">git</span> <span class="nb">:host</span> <span class="nv">github</span> <span class="nb">:repo</span> <span class="s">&#34;Ziqi-Yang/typst-mode.el&#34;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>同样需要有良好的网络作为基础。</p>
+<p>重启后，我们便可以使用 <code>typst-mode</code> 编写 <code>typst</code> 代码了。</p>
+<h2 id="安装pdf浏览器-可选eaf-pdf-viewer">安装PDF浏览器（可选eaf-pdf-viewer）</h2>
+<p>为了能顺利显示PDF，你需要确保你的 <code>GNU/Linux</code> 上至少有一个pdf浏览器，如果你想将pdf浏览器嵌入到emacs中显示，你可以参考我写的《如何在Arch Linux上安装EAF-PDF-Viewer》一文或在查询其他人的相关博客。</p>
+<h2 id="增强实时性-可选">增强实时性（可选）</h2>
+<p>在打开 <code>typst-toggle-watch</code> 后，会弹出默认使用的PDF浏览器。此时你在emacs上键入 <code>typst</code> 代码后使用保存快捷键后，相应的pdf浏览器
+会自动更新。那么如果要增强实时性，做到更改后自动更新pdf，最简单的办法是我们让 emacs 自动保存。著名的前苏联诗人沃兹·基硕德·斯基曾说过：“我们也许永远不能成为巨人，但是我们可以是使用妖术的恶魔，让我们用智慧欺骗巨人们打架吧！”。<a href="https://github.com/manateelazycat%22">懒猫大大</a> 写过一个名为<a href="https://github.com/manateelazycat/auto-save">auto-save</a> 的插件。
+我们将<a href="https://github.com/manateelazycat/auto-save">auto-save</a>的代码嵌入到 <code>init.el</code> 中就可以实现增强实时性</p>
+<img src="https://elimgs.oss-cn-beijing.aliyuncs.com/imgs/typst.gif" alt="typst" style="zoom: 50%;" />
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Elon Li</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2024-01-31
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/typst/">Typst</a>
+          <a href="/tags/emacs/">Emacs</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/install_eaf_arch/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">如何在Arch Linux上安装EAF-PDF-Viewer</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="elonisme@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://elonisme.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Elon Li</span>
+  </span>
+
+  <a href="https://www.gnu.org/s/emacs/"><img width="150px" height="44px" src="https://elimgs.oss-cn-beijing.aliyuncs.com/imgs/made-with-emacs.jpeg"></a>
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
