@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-01-31T20:43:24+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-01-31T20:43:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,6 +17,13 @@
   
   <url>
     <loc>http://localhost:1313/tags/emacs/</loc>
+    <lastmod>2024-01-31T20:43:24+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/emacs%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-01-31T20:43:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -59,18 +73,6 @@
   
   <url>
     <loc>http://localhost:1313/archives/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

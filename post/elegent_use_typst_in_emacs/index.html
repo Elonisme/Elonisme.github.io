@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Elon Li" /><meta name="description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而E" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Elon Li" /><meta name="description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,18 +40,18 @@
 
 
 <meta property="og:title" content="如何在Emacs上优雅地使用Typst" />
-<meta property="og:description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而E" />
+<meta property="og:description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/elegent_use_typst_in_emacs/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2024-01-31T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-01-31T20:43:24+08:00" />
 
 <meta itemprop="name" content="如何在Emacs上优雅地使用Typst">
-<meta itemprop="description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而E"><meta itemprop="datePublished" content="2024-01-31T00:00:00+00:00" />
+<meta itemprop="description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工"><meta itemprop="datePublished" content="2024-01-31T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-01-31T20:43:24+08:00" />
 <meta itemprop="wordCount" content="977">
 <meta itemprop="keywords" content="Typst,Emacs," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="如何在Emacs上优雅地使用Typst"/>
-<meta name="twitter:description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而E"/>
+<meta name="twitter:description" content="Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -78,7 +78,7 @@
   <ul class="mobile-menu-list">
     <a href="/">
         <li class="mobile-menu-item">Home</li>
-      </a><a href="/archives/">
+      </a><a href="/post/">
         <li class="mobile-menu-item">Archives</li>
       </a><a href="/tags/">
         <li class="mobile-menu-item">Tags</li>
@@ -109,7 +109,7 @@
     <li class="menu-item">
         <a class="menu-item-link" href="/">Home</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/archives/">Archives</a>
+        <a class="menu-item-link" href="/post/">Archives</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/tags/">Tags</a>
       </li><li class="menu-item">
@@ -132,7 +132,9 @@
 
       <div class="post-meta">
         <span class="post-time"> 2024-01-31 </span>
-        
+        <div class="post-category">
+            <a href="/categories/emacs%E6%8A%80%E6%9C%AF/"> Emacs技术 </a>
+            </div>
         
       </div>
     </header>
@@ -155,7 +157,7 @@
   </div>
 </div>
     <div class="post-content">
-      <p>Typst 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像 LaTeX 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而Emacs作为一款以自由著称的编辑器，也是支持编写Typst的。本文将逐步介绍如何在_Emacs_上使用_Typst_。</p>
+      <p><code>Typst</code> 是为科学写作而诞生的基于标记的排版系统。 它被设计之初就是作为一种替代品，用于替代像<code>LaTeX</code> 这样的高级工具，又或者是像 Word 和 Google Docs 这样的简单工具。而 <code>Emacs</code>作为一款以自由著称的编辑器，也是支持编写Typst的。本文将逐步介绍如何在 <code>Emacs</code>上使用 <code>Typst</code>。</p>
 <h2 id="下载typst">下载Typst</h2>
 <p>首先我们需要下载 <code>typst</code> 到具体的 <code>Gnu/Linux</code> 发行版上，我使用Arch系的发行版，所以我使用以下的命令就能安装 <code>typst</code>:</p>
 <div class="highlight"><div class="chroma">
